@@ -17,25 +17,8 @@
             background-color: #f4f4f4;
         }
 
-        .header {
-            width: 100%;
-            text-align: left;
-            padding: 10px;
-            box-sizing: border-box;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .header img {
-            height: 50px;
-            /* Adjust the size as needed */
-        }
-
         #container {
             text-align: center;
-            margin-top: 70px;
-            /* Add margin to avoid overlap with header */
         }
 
         #mapSelector {
@@ -60,9 +43,6 @@
 </head>
 
 <body>
-    <div class="header">
-        <img src="images/logo.png" alt="Bunka Logo">
-    </div>
     <div id="container">
         <h1>Explore Oscar Dataset en français à l'aide de Bunka</h1>
         <select id="mapSelector" onchange="changeMap()">
@@ -70,7 +50,7 @@
             <option value="map_clean.html">Map avec les labels nettoyés</option>
         </select>
 
-        <iframe id="mapFrame" src="map.html" style="width:1200px; height:1200px;"></iframe>
+        <iframe id="mapFrame" src="map.html" style="width:1200px; height:900;"></iframe>
     </div>
 </body>
 
